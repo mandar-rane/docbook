@@ -38,13 +38,7 @@ public class Patient {
 		this.username = username;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	
 
 	public Integer getAge() {
 		return age;
@@ -78,6 +72,16 @@ public class Patient {
 		this.gender = gender;
 	}
 
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -91,6 +95,8 @@ public class Patient {
 	@Column(nullable = false)
 	private String password;
 	
+
+
 	@Column(nullable = false)
 	private Integer age;
 	
